@@ -1,5 +1,6 @@
 package com.omrobbie.androidversions;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,9 +51,19 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.ViewHold
             initialRelease = (TextView) itemView.findViewById(R.id.tv_initial_release);
         }
 
-        public void bind(AndroidPojo item) {
+        public void bind(final AndroidPojo item) {
             codename.setText(item.getCodename() + " (" + item.getVersion() + ")");
             initialRelease.setText(DateTimeFormat.getDateString(item.getInitialRelease()));
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(itemView.getContext(), DetailActivity.class);
+                    intent.putExtra(DetailActivity.SCREENSHOT, item.getScreenshot());
+                    intent.putExtra(DetailActivity.DESCRIPTION, item.getDescription());
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }
