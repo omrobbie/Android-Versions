@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android Versions</string>
+    <string name="description_title">Short Description</string>
+    <string name="description">The version history of the Android mobile operating system began with the public release of the Android beta in November 5, 2007. The first commercial version, Android 1.0, was released in September 2008. Android is continually developed by Google and the Open Handset Alliance, and it has seen a number of updates to its base operating system since the initial release.</string>
+    <string name="initial_release">Initial Release :</string>
 </resources>
