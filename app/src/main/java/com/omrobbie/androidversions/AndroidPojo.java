@@ -6,18 +6,28 @@ package com.omrobbie.androidversions;
 
 public class AndroidPojo {
 
+    private int picture;
     private String codename;
     private String version;
     private String initialRelease;
     private String screenshot;
     private String description;
 
-    public AndroidPojo(String codename, String version, String initialRelease, String screenshot, String description) {
+    public AndroidPojo(int picture, String codename, String version, String initialRelease, String screenshot, String description) {
+        this.picture = picture;
         this.codename = codename;
         this.version = version;
         this.initialRelease = initialRelease;
         this.screenshot = screenshot;
         this.description = description;
+    }
+
+    public int getPicture() {
+        return picture;
+    }
+
+    public void setPicture(int picture) {
+        this.picture = picture;
     }
 
     public String getCodename() {

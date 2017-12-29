@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadDataDummy() {
         list.add(new AndroidPojo(
+                R.drawable.alpha,
                 "(No Codename)",
                 "1.0",
                 "2008-09-28",
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.beta,
                 "(Internally known as 'Petit Four')",
                 "1.1",
                 "2009-02-09",
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.cupcake,
                 "Cupcake",
                 "1.5",
                 "2009-04-27",
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.donut,
                 "Donut",
                 "1.6",
                 "2009-09-15",
@@ -72,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.eclair,
                 "Eclair",
                 "2.0 - 2.1",
                 "2009-10-26",
@@ -80,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.froyo,
                 "Froyo",
                 "2.2 - 2.2.3",
                 "2010-05-20",
@@ -88,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.gingerbread,
                 "Gingerbread",
                 "2.3 - 2.3.7",
                 "2010-12-06",
@@ -96,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.honeycomb,
                 "Honeycomb",
                 "3.0 - 3.2.6",
                 "2011-02-22",
@@ -104,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.ice_cream_sandwich,
                 "Ice Cream Sandwich",
                 "4.0 - 4.0.4",
                 "2011-10-18",
@@ -112,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.jelly_bean,
                 "Jelly Bean",
                 "4.1 - 4.3.1",
                 "2012-07-09",
@@ -120,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.kitkat,
                 "KitKat",
                 "4.4 - 4.4.4",
                 "2013-10-31",
@@ -128,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.lollipop,
                 "Lollipop",
                 "5.0 - 5.1.1",
                 "2014-11-12",
@@ -137,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.marshmallow,
                 "Marhmallow",
                 "6.0 - 6.0.1",
                 "2015-10-05",
@@ -145,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 ));
 
         list.add(new AndroidPojo(
+                R.drawable.nougat,
                 "Nougat",
                 "7.0 - 7.1.2",
                 "2016-08-22",
@@ -153,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         list.add(new AndroidPojo(
+                R.drawable.oreo,
                 "Oreo",
                 "8.0 - 8.1",
                 "2017-08-21",
