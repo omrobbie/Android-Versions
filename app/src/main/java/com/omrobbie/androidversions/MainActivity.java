@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvAndroid;
     private List<AndroidPojo> list;
+    private RecyclerView.ItemDecoration decoration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +30,13 @@ public class MainActivity extends AppCompatActivity {
         rvAndroid = (RecyclerView) findViewById(R.id.rvAndroid);
 
         list = new ArrayList<>();
+        decoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
     }
 
     private void setupList() {
         AndroidAdapter adapter = new AndroidAdapter(list);
         rvAndroid.setLayoutManager(new LinearLayoutManager(this));
-        rvAndroid.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        rvAndroid.addItemDecoration(decoration);
         rvAndroid.setAdapter(adapter);
     }
 
@@ -155,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 "2015-10-05",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Android_6.0-en.png/230px-Android_6.0-en.png",
                 "Android 6.0 \"Marshmallow\" was unveiled under the codename \"Android M\" during Google I/O on May 28, 2015, for the Nexus 5 and Nexus 6 phones, Nexus 9 tablet, and Nexus Player set-top box, under the build number MPZ44Q.[203] The third developer preview (MPA44G) was released on August 17, 2015 for the Nexus 5, Nexus 6, Nexus 9 and Nexus Player devices,[204] and was updated to MPA44I that brought fixes related to Android for Work profiles.[205]"
-                ));
+        ));
 
         list.add(new AndroidPojo(
                 R.drawable.nougat,
